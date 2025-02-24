@@ -5,6 +5,9 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import HomePage from "./components/pages/HomePage";
+import ATroop from "./components/pages/ATroop";
+import BTroop from "./components/pages/BTroop";
+import CTroop from "./components/pages/CTroop";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,29 +18,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
+            <Route path="atroop" element={<ATroop />} />
+            <Route path="btroop" element={<BTroop />} />
+            <Route path="ctroop" element={<CTroop />} />
           </Route>
         </Routes>
       </BrowserRouter>
-      {/* <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
     </>
   );
 }
