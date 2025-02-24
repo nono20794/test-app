@@ -30,3 +30,13 @@
 .logo-menu button {
   font-size: 20px;
 }
+
+@media (min-width: 600px) {
+  .main-header {
+    justify-content: space-around;
+    padding-inline: 50px;
+  }
+  .logo-menu {
+    gap: 20px;
+  }
+}
