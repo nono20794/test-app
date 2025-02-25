@@ -6,9 +6,12 @@ export default function ATroop() {
       <h1>סוללה א</h1>
       <Tabs>
         <div className="section-1" title="שמירות">
-          <div className="div1">1</div>
-          <div className="div1">2</div>
-          <div className="div1">3</div>
+          <div className="commandor-name">
+            <label htmlFor="name" className="label">
+              שם מפקד:
+            </label>
+            <input type="text" name="name" id="name" placeholder="שם מפקד" />
+          </div>
         </div>
         <div className="section-2" title="עמדות">
           <h1>this is section 2</h1>
